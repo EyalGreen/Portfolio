@@ -1,0 +1,553 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="he">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script src="/WebResource.axd?d=uHbVVu9ed2T4Ut8Wqd4mdW9xMdxnI9E3r-j793ThLq-xkBakYCSX681tv4vzTsz4UR9zure3gmZMpk42mxRHcyFH9SmIPj3k-u9oEPFyvbY7r0w8VSxVAhJaYnMYe_pJR3BFH7b7EFNkoKfCiGbkCGRKtiK2Fh8kduDTkgIaO-67pxEBlbJsrEg6-0kyx5aRIagQM9-1Q9PH1LfEDq_gVYh07H81&t=636021234500707690" type="text/javascript"></script><link href="//cdn.cet.ac.il/libs/jquery.bs.dropdown/latest/css/jquery.bs.dropdown.css" rel="stylesheet" type="text/css" /><link href="//cdn.cet.ac.il/libs/cet.mybag.groupbox/latest/css/groupbox.css" rel="stylesheet" type="text/css" /><link href="//cdn.cet.ac.il/libs/cet.ui.soundplayer/1.1/cet.ui.soundplayer.css" rel="stylesheet" type="text/css" /><link href="//cdn.cet.ac.il/libs/tinymce/4.1.10/plugins/cetKotarImg/cetImage.min.css" rel="stylesheet" type="text/css" /><link href="http://talkbackservice.cet.ac.il/css/talkbacks.css" rel="stylesheet" type="text/css" /><link href="/ClientResourcesServingHandler.ashx?h=02e22b0e6bc478c7c900d028ee8fc0243d8df13b&t=css&minify=True" rel="stylesheet" type="text/css" /><link href="//cdn.cet.ac.il/libs/cet.browsercheck/latest/check.min.css" rel="stylesheet" type="text/css" /><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script><script src="//cdn.cet.ac.il/libs/cet.mybag.ui/latest/js/mybagui.js" type="text/javascript"></script><script src="//cdn.cet.ac.il/libs/cet.mybag.groupbox/latest/js/localization/he.js" type="text/javascript"></script><script src="//cdn.cet.ac.il/libs/cet.mybag.groupbox/latest/js/localization/ar.js" type="text/javascript"></script><script src="//cdn.cet.ac.il/libs/cet.mybag.groupbox/latest/js/localization/en.js" type="text/javascript"></script><script src="//cdn.cet.ac.il/libs/cet.mybag.groupbox/latest/js/localization/zh.js" type="text/javascript"></script><script src="//cdn.cet.ac.il/libs/cet.mybag.groupbox/latest/js/localization/vi.js" type="text/javascript"></script><script src="//cdn.cet.ac.il/libs/cet.mybag.groupbox/latest/js/groupbox.js" type="text/javascript"></script><script src="//cdn.cet.ac.il/libs/cet.mybag.groupbox/latest/js/groupboxApi.js" type="text/javascript"></script><script src="//cdn.cet.ac.il/libs/jquery.bs.dropdown/latest/js/jquery.bs.dropdown.js" type="text/javascript"></script><script src="//cdn.cet.ac.il/libs/soundmanager2/2.97.20150601/script/soundmanager2-jsmin.js" type="text/javascript"></script><script src="//cdn.cet.ac.il/libs/jquery.transit/0.9.9/jquery.transit.js" type="text/javascript"></script><script src="//cdn.cet.ac.il/libs/cet.ui.soundplayer/1.1/cet.ui.soundplayer.js" type="text/javascript"></script><script src="//cdn.cet.ac.il/libs/mustache/1.0/mustache.js" type="text/javascript"></script><script src="//cdn.cet.ac.il/libs/tinymce/4.1.10/tinymce.min.js" type="text/javascript"></script><script src="//cdn.cet.ac.il/libs/cet.editorManager/1.0/cetEditorManager.js" type="text/javascript"></script><script src="//cdn.cet.ac.il/libs/velocity/1.2.2/velocity.min.js" type="text/javascript"></script><script src="//cdn.cet.ac.il/libs/cet.mybag.taskform/1.0/js/TaskFormWrapper.js" type="text/javascript"></script><script src="/KotarApp/System/js/comandhandler.js" type="text/javascript"></script><script src="http://talkbackservice.cet.ac.il/js/talkbacks.js" type="text/javascript"></script><script src="/ClientResourcesServingHandler.ashx?h=0b133f2f3055b17b7b5fac15c89efdf14a73bc30&t=javascript&minify=True" type="text/javascript"></script><script src="/ClientResourcesServingHandler.ashx?h=bc8fee18353bf0e308ab3f67e69ec821999d635c&t=javascript&minify=True" type="text/javascript"></script><meta name="verify-v1" content="6I7cd4g70Bhfz3CUTLymsukTNEVnHDMmMABKW2UVSxc=" /><meta http-equiv="Pragma" content="no-cache" /><meta http-equiv="Expires" content="-1" /><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /><link rel="alternate" type="application/rss+xml" title="ספרי לימוד מטח - עדכונים" href="http://www.school.kotar.co.il/KotarApp/System/Rss.aspx" /><script type='text/javascript'>
+var UTXT_PleaseWait = 'אנא המתן/י';
+var UTXT_Searching = 'המערכת מבצעת חיפוש';
+var UTXT_Logout = 'התנתק/י';
+var UTXT_BookAddedToFavorites = 'הספר התווסף למדף הספרים';
+var UTXT_ActionCompleted = 'הפעולה הצליחה';
+var UTXT_ActionFailed = 'הפעולה נכשלה';
+var UTXT_Close = 'סגירה';
+var TXT_Search_BookTitle = 'חפש שם ספר';
+var TXT_Search_BookContent = 'חפש בכל התוכן';
+var TXT_Search_MoreResult = 'הצג עוד תוצאות';
+var TXT_Toolbar_Cart = 'סל הקניות';
+var TXT_Toolbar_Logout = 'התנתק/י';
+var TXT_Toolbar_Login = 'כניסה';
+var TXT_Toolbar_MyAccount = 'החשבון שלי';
+var TXT_Toolbar_MyShelf = 'מדף הספרים שלי';
+var TXT_Toolbar_AddShelf = 'הוסף למדף שלי';
+var TXT_Toolbar_MyProjects = 'תיקיות התוכן שלי';
+var TXT_Toolbar_AddToProjects = 'הוסף לתיקיית תוכן';
+var TXT_Toolbar_MyBag = 'הילקוט שלי';
+var TXT_Toolbar_Help = 'עזרה';
+var TXT_Toolbar_TOC = 'תוכן העניינים';
+var TXT_Toolbar_BookInfo = 'על הספר';
+var TXT_Toolbar_Hello = 'שלום';
+var TXT_Toolbar_Page = 'עמ&#39;';
+var TXT_Toolbar_Search = 'חפש בספרייה';
+var TXT_Toolbar_Contact = 'צור קשר';
+var TXT_BookInfo_More = 'עוד...';
+var TXT_BookInfo_Less = 'סגור';
+var TXT_Toolbar_ShowMiniScroll = 'הצג כפתורי גלילה';
+var TXT_Toolbar_HideMiniScroll = 'הסתר כפתורי גלילה';
+var TXT_Toolbar_MoveToLanguage = 'اللغة العربيّة';
+var TXT_UserMenu_Help = '/Misc/Help.aspx';
+var TXT_Ravmilim = 'למידע מלא (הסבר מורחב, מילים נרדפות, ביטויים ועוד), נסו את';
+</script>
+
+  <script type="text/javascript">
+    var nWebsiteHeaderHeight = 103;
+    var nSideMarginsWidth = 0;
+  </script>
+
+  
+  
+  <title>קראו בכותר - מסע אל העבר : העולם המודרני במשבר 1870 - 1939</title> 
+  <meta name="description" content="ספר דיגיטלי באתר כותר. סדרת הספרים מסע אל העבר פותחה על פי תכנית הלימודים לחטיבת הביניים.<BR>הסדרה כוללת שלושה ספרים לכיתות ז, ח, ט.<BR>*עולמות נפגשים, מאות 5 - 16<BR>*קדמה ומהפכות, מאות 16 - 19<BR>*העולם המודרני במשבר, 1870 - 1939<BR>ספרי הסדרה מציעים מסע מלא חוויות למאות הקודמות, מימי הביניים ועד לעת החדשה - מאות שהיו רצופות מאבקים פוליטיים, מלחמות עקובות מדם, התפתחויות חשובות במדע, תגליות גאוגרפיות נועזות ופריצות דרך במחשבה הפוליטית, הדתית והחברתית.<BR>&nbsp;ביחידות הלימוד הסיפור ההיסטורי מוצג בליווי תעודות, קטעי מחקר, מפות, תמונות,<BR>צירי זמן ומגוון פעילויות.<BR>&nbsp;הספרים מלֻווים בתמיכה ובהעשרה באתר תולדוט: <A href=http://www.toldot.cet.ac.il>www.toldot.cet.ac.il</A> <BR>ספרי הסדרה מופיעים במהדורה דיגיטלית באתר כותר ספרי לימוד, סביבת הוראה-למידה חדשנית ומתקדמת." />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />  
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" href="//images1.kotar.co.il/GetPageImg.ashx?Type=thumbnail&nBookID=94775007 ">
+  <link  rel="shortcut icon" href="//images1.kotar.co.il/GetPageImg.ashx?Type=thumbnail&nBookID=94775007 ">  
+  
+ 
+   
+
+   <script>
+     window.addEventListener("load", function() {
+       cet.uiServices.login.initModule({
+         language: 'he',
+         hasIdm: true,
+         siteKey: 'school',
+         siteName: 'school.kotar.cet.ac.il',
+         url: window.location.href,
+         container: $('body'),
+         onLogin: function(){
+           if (!BaseMaster_bUserIsLoggedIn) {
+             window.location.reload();
+           }
+         },
+         //onLogout: ManifestProviderProxy.onLoggedinUserChanged,
+         //onLoginProcessEnd: ManifestProviderProxy.onLoginProcessEnd,
+         //onschoolupdate: ManifestProviderProxy.onLoggedinUserChanged,
+         setSSLiframeFromEbag: true
+       });
+     });   
+  </script>
+  <style>
+    .cus-login-main-container {
+      display: none;
+    }
+  </style>   
+
+  <style type="text/css">
+    /*doctype support fixes*/
+    input {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    .TitleCreate {
+      background-color: #01A1B1;
+      color: #FFFFFF;
+      padding: 2px 20px 2px 0px;
+      font-weight: bold;
+    }
+
+
+    .masterpageBody {
+      width: 100%;
+      direction: rtl;
+      font-family: "Arial";
+      font-size: 12px;
+      background-color: white;
+      color: #636363;
+      margin: 0 0 0 0;
+    }
+  </style>
+     <!-- Accessibility
+   <script data-cfasync="false"> 
+       //.indexOf("ar.school.kotar") < 0 for IE11
+       if (window.location.hostname.indexOf("ar.school.kotar") < 0)
+       {
+           window.interdeal = {
+               sitekey: "98586e986e38935363a52cfc83b068be",
+               Position: "Right",
+               Menulang: "HE",
+               btnStyle: {
+                   vPosition: ["90%", "-1%"],
+                   scale: ["undefined", "0.6"],
+               }
+           }
+       }
+     
+       else {
+           window.interdeal = {
+               sitekey: "9f3f5e61733530abe01bd2ec7ef5ad53",
+               Position: "Right",
+               Menulang: "AR",
+               btnStyle: {
+                   vPosition: ["90%", "-1%"],
+                   scale: ["undefined", "0.6"],
+               }
+       }
+	
+	}
+</script>
+    
+    <script src="https://js.nagich.co.il/accessibility.js" async data-cfasync="false"></script>-->
+<title>
+
+</title></head>
+<body class="masterpageBody" style="background-image: none;" onload="MasterPage_SetOnLoadFlag();">
+   
+  <script id='kotar-ebag-sso' src='https://ebag.cet.ac.il/CetSso.js'></script>
+  <script id='kotar-sso=handler' src='/kotarapp/resources/cet-sso-handler.js'></script>
+
+  <form method="post" action="./Viewer.aspx?nBookID=94775007" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE1MzIwNjUzMzlkZDMgR+/gA+sSmH/QOFZ8dMVDtd4f" />
+</div>
+
+<script type='text/javascript'>var bShowResourceFieldName = false ;</script><script type='text/javascript'>var MainMaster_AccountPopupsFolder = '/KotarApp/Account/Popups/'; var MainMaster_AccountTouchPopupsFolder = '/KotarApp/Account/Popupnew/';</script><script type='text/javascript'>var BaseMaster_sLanguageCode = 'he';var BaseMaster_nCetLanguageCode = 1;var BaseMaster_sDirection = 'rtl';</script><script type='text/javascript'>var BaseMaster_DefaultBooksLanguageFilter = 'he,en'</script><script type='text/javascript'>var BaseMaster_CanChageLang = true;</script><script type='text/javascript'>var BaseMaster_token = '00000000-0000-0000-0000-000000000000';</script><script type='text/javascript'>
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script><script type='text/javascript'>
+        var pageTracker = _gat._getTracker("UA-424936-60");
+        try{
+        pageTracker._initData();
+        pageTracker._trackPageview();
+        }catch(err) {}
+        </script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="1206D201" />
+</div>
+    <div id="tblContentContainer" style="width: 100%">
+      <div id="masterStage">
+        
+  <script src="https://login.cet.ac.il/Scripts/login.js"></script>
+   
+  <script id='kotar-ebag-sso' src='//ebag.cet.ac.il/CetSso.js'></script>
+  <script id='kotar-sso=handler' src='/kotarapp/resources/cet-sso-handler.js'></script>
+  <script src='//cdn.cet.ac.il/libs/jquery/2.1.1/jquery-2.1.1.min.js'></script>  
+  <script src='//cdn.cet.ac.il/libs/jquery.transit/0.9.9/jquery.transit.js'></script>  
+  <script src='//cdn.cet.ac.il/libs/velocity/1.2.2/velocity.min.js'></script>  
+  <script src='//cdn.cet.ac.il/libs/jquery.validate/1.13.0/jquery.validate.js'></script>
+  <script src="/kotarapp/resources/jquery/jquery-ui-1.11.custom.min.js"></script>  
+  <script src='//ebag.cet.ac.il/api/environment/settingsAsScript'></script>
+  <script src='//ebag.cet.ac.il/api/js/ofakim.api.js'></script>
+  <script src='//ebag.cet.ac.il/api/js/cookies.js'></script>
+  <script src='//cdn.cet.ac.il/ui-services/login/js/cet.ui-services.login.full.js'></script>
+  <script  type="text/javascript">
+    $(function () {         
+      //for IE - cause in Chrome it happen by book_OnScroll event
+      var oPageNum = document.getElementById("oPageNum");
+
+      if (oPageNum != null && location.href.indexOf("ShowMarker") < 0) {
+        window.setTimeout("SetDisplayByPagesInVew(false)", 300);
+      }
+    });
+
+  </script>
+<!--This img is for facebook-->
+<img width="78" height="96" style="display:none" alt='קראו בכותר - מסע אל העבר : העולם המודרני במשבר 1870 - 1939' src='http://kotarimagesSTG.cet.ac.il/GetPageImg_v2.ashx?Type=thumbnail&nBookID=94775007' />
+
+<div id="mytoolbar"></div>
+<div id="divBookClips" style="display: none;"></div>
+<div id="scrollwrapper">
+  <div id="ViewerVerticalScrollbar">
+      <div id="ViewerIndicator" style="top:0;">
+          <div id="ViewerIndicatorLine"></div>
+          <div id="ViewerIndicatorKnob"></div>
+      </div>
+  </div>
+</div>
+<div id="scrollpagesindicator">
+  <div id="scrollpagesindicatorWrapper" ></div>
+  <input id="scrollpagesindicatorText" type="text">
+  <div id="scrollpagesindicatorBookmark"></div>
+</div>  
+<div id="bookwrapper">
+    <div id="BV_oBook">            
+      
+    </div>
+  </div>
+<div id="BV_oClosedPageCoverHTML" style="display: none">
+  
+  
+</div>            
+<div id="floating-toolbar"></div>
+
+
+  <script type='text/javascript'>
+var BV_sOpenPageUrlFormat = '{CDN}/GetPageImg_v2.ashx?Type=page_img&gPageToken={gPageToken}&nStep={nStep}&nVersion={nVersion}';
+var BV_sClosedPageUrlFormat = '{CDN}/GetPageImg_v2.ashx?Type=thumbnail&gPageToken={gPageToken}&nStep={nStep}&nVersion={nVersion}';
+var BV_sPageBackgroundImageUrlFormat = 'http://kotarimagesSTG.cet.ac.il/GetPageBg.ashx?nPageWidth={nPageWidth}&nPageHeight={nPageHeight}&sMessage=...הדף נטען';
+var BV_sPrintPageUrlFormat = 'http://kotarimagesSTG.cet.ac.il/PrintPages.ashx?gPageToken={gPageToken}&sWatermarkType={sWatermarkType}&v={nVersion}';
+var BV_sCropPageImageUrlFormat = 'http://kotarimagesSTG.cet.ac.il/CropDownload.ashx?gPageToken={gPageToken}&v={nVersion}&nSizeStep={nSizeStep}&nTop={nTop}&nLeft={nLeft}&nWidth={nWidth}&nHeight={nHeight}';
+var BV_nLowQualitySizeStepID = '2';
+var BV_nHighQualitySizeStepID = '4';
+var BV_nRealMinSizeStep = 0;
+var BV_nRealMaxSizeStep = 8;
+var BV_nMinSizeStep = 0;
+var BV_nMaxSizeStep = 8;
+var DefaultMaxSizeStep = 6;
+var BV_aSizeSteps = new Array();
+BV_aSizeSteps[0] = {nWidth: 210, nHeight: 270};
+BV_aSizeSteps[1] = {nWidth: 359, nHeight: 462};
+BV_aSizeSteps[2] = {nWidth: 508, nHeight: 654};
+BV_aSizeSteps[3] = {nWidth: 658, nHeight: 846};
+BV_aSizeSteps[4] = {nWidth: 807, nHeight: 1038};
+BV_aSizeSteps[5] = {nWidth: 957, nHeight: 1231};
+BV_aSizeSteps[6] = {nWidth: 1106, nHeight: 1423};
+BV_aSizeSteps[7] = {nWidth: 1256, nHeight: 1615};
+BV_aSizeSteps[8] = {nWidth: 1405, nHeight: 1807};
+</script>
+
+  
+<div id="ajaxMessageContainer" style="display: none; position: fixed;
+  width: 210px; z-index: 32765;">
+  <span style="background-color: Black; display: block; height: 1px; margin: 0 5px;
+    opacity: 0.75; font-size: 1px;"></span><span style="background-color: #000000; border-right: 2px solid Black;
+      border-left: 2px solid Black; display: block; height: 1px; margin: 0 3px; opacity: 0.75;
+      filter: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=75); font-size: 2px;">
+    </span><span style="background-color: #000000; border-right: 1px solid Black; border-left: 1px solid Black;
+      display: block; height: 1px; margin: 0 2px; opacity: 0.75; filter: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=75);
+      font-size: 2px;"></span><span style="background-color: #000000; border-right: 1px solid Black;
+        border-left: 1px solid Black; display: block; height: 2px; margin: 0 1px; opacity: 0.75;
+        filter: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=75); font-size: 2px;">
+      </span>
+  <div id="ajaxMessageContainerBG" style="background-color: #000000; border-right: 1px solid Black; border-left: 1px solid Black;
+    color: Black; opacity: 0.75; filter: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=75);
+    text-align: center; height: 19px; width: 208px;">
+  </div>
+  <span style="background-color: #000000; border-right: 1px solid Black; border-left: 1px solid Black;
+    display: block; height: 2px; margin: 0 1px; opacity: 0.75; filter: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=75);
+    font-size: 2px;"></span><span style="background-color: #000000; border-right: 1px solid Black;
+      border-left: 1px solid Black; display: block; height: 1px; margin: 0 2px; opacity: 0.75;
+      filter: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=75); font-size: 2px;">
+    </span><span style="background-color: #000000; border-right: 2px solid Black; border-left: 2px solid Black;
+      display: block; height: 1px; margin: 0 3px; opacity: 0.75; filter: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=75);
+      font-size: 2px;"></span><span style="background-color: Black; display: block; height: 1px;
+        margin: 0 5px; opacity: 0.75; font-size: 1px;"></span>
+</div>
+<div id="ajaxMessageBox" style="display: none; position: fixed; 
+  width: 210px; z-index: 32766;">
+  <span style="background-color: Black; display: block; height: 1px; margin: 0 5px;
+    font-size: 2px;"></span><span style="border-right: 2px solid Black; border-left: 2px solid Black;
+      display: block; height: 1px; margin: 0 3px; font-size: 2px;"></span><span style="border-right: 1px solid Black;
+        border-left: 1px solid Black; display: block; height: 1px; margin: 0 2px; font-size: 2px;">
+      </span><span style="border-right: 1px solid Black; border-left: 1px solid Black;
+        display: block; height: 2px; margin: 0 1px; font-size: 2px;"></span>
+  <div id="ajaxMessageContent" style="border-right: 1px solid Black; border-left: 1px solid Black;
+    color: #FFFFFF; padding: 0 5px; text-align: center; font-family: Arial;font-size:16px;">
+    </div>
+  <span style="border-right: 1px solid Black; border-left: 1px solid Black; display: block;
+    height: 2px; margin: 0 1px; font-size: 2px;"></span><span style="border-right: 1px solid Black;
+      border-left: 1px solid Black; display: block; height: 1px; margin: 0 2px; font-size: 2px;">
+    </span><span style="border-right: 2px solid Black; border-left: 2px solid Black;
+      display: block; height: 1px; margin: 0 3px; font-size: 2px;"></span><span style="background-color: Black;
+        display: block; height: 1px; margin: 0 5px; font-size: 2px;"></span>
+</div>
+
+  <script type='text/javascript'>
+var TXT_SystemMessage = 'הודעת מערכת';
+var TXT_PageIsLoading = 'הדף בטעינה....';
+var TXT_PleaseWaitBookIsLoading = 'אנא המתן/י... הספר בטעינה';
+var TXT_PleaseWaitMarkerIsLoading = 'אנא המתן/י... הפתקה בטעינה';
+var TXT_NoSuchMarker = 'הפתקה לא נמצאה';
+var TXT_NoSpace = 'אין מקום להציג את הספר';
+var TXT_TheHighlightHasNoContent = 'הדגשה זו הינה ללא טקסט';
+var TXT_ThePushpinHasNoContent = 'נעץ זו הינו ללא טקסט';
+var TXT_Saved = 'נשמר';
+var TXT_fSaved = 'נשמרה';
+var TXT_Updated = 'עודכן';
+var TXT_fUpdated = 'עודכנה';
+var TXT_Deleted = 'נמחק';
+var TXT_fDeleted = 'נמחקה';
+var TXT_TheLink = 'הקישור';
+var TXT_TheNote = 'הפתקה';
+var TXT_TheTocEntry = 'הכניסה לתוכן העניינים';
+var TXT_TheHighlight = 'הקטע המודגש';
+var TXT_Successfully = 'בהצלחה';
+var TXT_SelectionAreaIsTooSmall = 'הקטע שבחרת צר מדי';
+var TXT_SelectionAreaOutOfPage = 'הקטע שבחרת חורג מהדף';
+var TXT_Owner = 'נכתב על ידי';
+var TXT_Layers_All = 'כל השכבות';
+var TXT_Layers_N_of_M = 'N/M שכבות';
+var TXT_Layers_None = 'אף שכבה';
+var TXT_No_Layers = 'לא נמצאו שכבות מידע';
+var TXT_LayersList_Page = 'עמוד';
+var TXT_LayersList_Type = 'סוג';
+var TXT_LayersList_Title = 'כותרת';
+var TXT_LayersList_Updated = 'תאריך';
+var TXT_LayersList_NoTitle = 'ללא כותרת';
+var TXT_LayersList_GoToPage = 'קישור לעמוד {0}';
+var TXT_ADDTASK = 'צור משימה';
+var TXT_CLONE = 'יצירת עותק';
+var TXT_ZOOMIN = 'הגדלה';
+var TXT_ZOOMOUT = 'הקטנה';
+var TXT_MAIL = 'שלח במייל';
+var TXT_SHARE = 'שיתוף';
+var TXT_ORDER = 'סדר הופעה';
+var TXT_ORDER_VALIDATOR = 'יש להקליד מספר חיובי ושלם';
+var TXT_Refresh = 'רענן';
+var TXT_Close = 'סגירה';
+var TXT_Edit = 'עריכה';
+var TXT_Delete = 'מחיקה';
+var TXT_Cancel = 'ביטול';
+var TXT_Save = 'שמירה';
+var TXT_Folder = 'תיקייה:';
+var TXT_PleaseWait = 'אנא המתן/י';
+var TXT_AddLinkToSelectedText = 'הוספת קישור לטקסט הנבחר';
+var TXT_ChooseTextToAddLinkTo = 'בחר/י טקסט על מנת להוסיף קישור';
+var TXT_ClickToOpenNote = 'לחץ לפתיחת הפתקה';
+var TXT_CANNOT_ClickToOpenNote = 'לא ניתן לפתוח פתקית זו עד סיום עריכת פתקית נוכחית';
+var TXT_Abuse = 'דווח על תוכן פוגעני או על פגיעה בזכויות יוצרים';
+var TXT_OnlyOwnerCanEdit = 'רק {0} רשאי לערוך פתקה זו';
+var TXT_CantEditNotesInBrowser = 'לא ניתן לערוך פתקיות בדפדפן זה';
+var TXT_PleaseWriteURL = 'אנא מלא/י את שדה הקישור';
+var TXT_PleaseWriteValidURL = 'אנא מלא/י כתובת חוקית בשדה הקישור';
+var TXT_PleaseWriteTextField = 'אנא מלא/י את שדה הטקסט';
+var TXT_CantChangeFolder = 'לא ניתן לשנות תיקייה';
+var TXT_Page = 'עמוד';
+var TXT_Pages = 'עמודים';
+var TXT_To = 'עד';
+var TXT_ReqPageIsNotVisible = 'לא ניתן להגיע ישירות לדף המבוקש';
+var TXT_BlockedAction = 'פעולה חסומה';
+var TXT_CantAddTocEntriesToClosedPage = 'לא ניתן להוסיף תוכן עניינים לדפים חסומים';
+var TXT_CantAddHighlightsToClosedPage = 'לא ניתן להוסיף הדגשות לדפים חסומים';
+var TXT_CantAddNotesToClosedPage = 'לא ניתן להוסיף פתקיות לדפים חסומים';
+var TXT_CantCopyFromClosedPage = 'לא ניתן להעתיק מקטעים של דפים חסומים';
+var TXT_CantAddLinksToClosedPage = 'לא ניתן להוסיף קישורים לדפים חסומים';
+var TXT_CantAddLMSTaskToClosedPage = 'לא ניתן להוסיף משימות לדפים חסומים';
+var TXT_ErrorAddingBookToCart = 'הוספת הספר לעגלת הקניות נכשלה';
+var TXT_ClickToCopyThisSection = 'הקלק/י על מנת להעתיק קטע זה';
+var TXT_ContentCopyCompleted = 'ניתן להדביק את התוכן המבוקש במסמך WORD';
+var TXT_ErrorCopyingSelection = 'שגיאה בהעתקה';
+var TXT_BibliographyCopyCompleted = 'הביבליוגרפיה הועתקה בהצלחה. ניתן להדביק את תוכנה במסמך WORD.';
+var TXT_PageLabel = 'עמוד';
+var TXT_ErrorNoFlash = 'על מנת להעתיק טקסט יש להתקין את הגרסה האחרונה של פלאש';
+var TXT_ErrorFlashNotLoaded = 'שגיאה בטעינת רכיב העתקה, נא נסה שוב לסמן את הטקסט';
+var TXT_CantPrintThisPage = 'על מנת להדפיס דף זה עלייך לרכוש תחילה הרשאות צפייה מתאימות.';
+var TXT_SearchIsInvalid = 'מחרוזת החיפוש אינה תקינה';
+var TXT_SearchHadZeroResults = 'לא נמצאו תוצאות';
+var TXT_SearchReturnedXResults = 'נמצאו {0} תוצאות';
+var TXT_LastSearchResult = 'את/ה נמצא/ת בתוצאת החיפוש האחרונה';
+var TXT_FirstSearchResult = 'את/ה נמצא/ת בתוצאת החיפוש הראשונה';
+var TXT_HelloUsernamePleaseWait = 'שלום [sUsername]. אנא המתן/י...';
+var TXT_Logoff = 'התנתק/י';
+var TXT_LastTocEntry = 'את/ה נמצא/ת בפרק האחרון של הספר';
+var TXT_FirstTocEntry = 'את/ה נמצא/ת בפרק הראשון של הספר';
+var TXT_AdminPublishTool = 'פרסום גרסה';
+var TXT_TocEntryIsActive = 'סמן/י את הקטע הרצוי בדף';
+var TXT_HighlightIsActive = 'הדגיש/י את הקטע הרצוי בדף';
+var TXT_PushpinIsAction = 'הוסף/י פתקה לדף';
+var TXT_CopyRegionIsActive = 'סמן/י את הקטע הרצוי להעתקה';
+var TXT_NoPageWithSuchLabel = 'אין עמוד עם התווית';
+var TXT_LMSTaskIsActive = 'הוסף/י משימה לדף';
+var TXT_LMSTaskNotActive = 'פעולה זאת אינה נתמכת בטאבלטים.';
+var TXT_AdminToolbarWarning = 'אזהרה,כל שינוי שיעשה בעזרת כלי הניהול ,ישפיע על כל משתמשי האתר!';
+var TXT_EmbededIsActive = 'סמן את הקטע הרצוי בדף';
+var TXT_AdminShowEditTools = 'הצג כלי עריכה';
+var TXT_AdminHideEditTools = 'הסתר כלי עריכה';
+var TXT_AdminReport = 'דוח הטמעות';
+var TXT_AdminBookTools = 'כלים';
+var TXT_AdminAddEmbedd = 'הטמע';
+var TXT_AdminDefineTools = 'הגדר כלים נלווים לספר';
+var TXT_AdminToolDisplayOrder = 'סדר תצוגה';
+var TXT_AdminToolName = 'שם הכלי';
+var TXT_AdminToolAddress = 'הזינו כתובת';
+var TXT_AdminToolMinWidth = 'רוחב מינימלי';
+var TXT_AdminToolPixels = 'פיקסלים';
+var TXT_AdminShowTool = 'הצג לבדיקה';
+var TXT_AdminSaveNShow = 'שמור ופרסם';
+var TXT_MobileBookMarksAdd = 'הוסף';
+var TXT_MobileBookMarksRemove = 'הסר';
+var TXT_MobileBookMarksMyList = 'הסימניות שלי';
+var TXT_YoureAtMaximunZoomLevel = 'הגעת לגודל הדף המקסימלי';
+var TXT_YoureAtMinimunZoomLevel = 'הגעת לגודל הדף המינימלי';
+var TXT_LastHighlightedPage = 'את/ה נמצא/ת בעמוד האחרון שמכיל תוצאות חיפוש רלוונטיות';
+var TXT_FirstHighlightedPage = 'את/ה נמצא/ת בעמוד הראשון שמכיל תוצאות חיפוש רלוונטיות';
+var TXT_ConfirmLMSTaskDeletion = 'פעולה זו תסיר את המשימה מדפי הספר ב[A]כותר[A]. כדי למחוק את המשימה מלוח המשימות יש לבצע מחיקה מתוך לשונית [A]ניהול משימות[A] במרחב האישי שלך.';
+var TXT_DeleteTaskError = 'מחיקת המשימה נכשלה,נא נסה שוב';
+var TXT_CopyOf = 'עותק של';
+var TXT_CopyTaskError = 'יצירת העותק נכשלה,נא נסה שוב';
+var TXT_TaskGroups = 'למשימה משויכות הקבוצות הבאות';
+var TXT_DeletedLMSTaskGroups_Msg1 = 'ביקשת למחוק משימה';
+var TXT_DeletedLMSTaskGroups_Msg2 = 'אישור יסיר את המשימה מסביבות העבודה ואת תיעוד הנתונים הנלווה';
+var TXT_ResizeEmbededPart = 'שנה מימדי רכיב';
+var TXT_SaveResizeEmbededPart = 'שמור מימדי רכיב';
+var TXT_PublishEmbededPart = 'פרסם';
+var TXT_WaitApproveEmbededPart = 'בקשת פרסום';
+var TXT_WaitApproveEmbededPartStatus = 'ממתין לאישור';
+var TXT_ApproveEmbededPart = 'אשר';
+var TXT_RejectEmbededPart = 'שלח לתיקון';
+var TXT_EditEmbededPart = 'ערוך';
+var TXT_FixEmbededPart = 'תקן';
+var TXT_DeleteEmbededPart = 'מחק';
+var TXT_Confirm = 'האם אתה בטוח?';
+var TXT_Embeded = 'הרכיב הוטמע';
+var TXT_DeleteEmbeded = 'הרכיב המוטמע נמחק בהצלחה';
+var TXT_PublishEmbeded = 'הרכיב המוטמע פורסם בהצלחה';
+var TXT_NoSuchEmbeded = 'הרכיב המוטמע לא נמצא';
+var TXT_WaitApproveEmbeded = 'הרכיב מחכה לאישור פירסום';
+var TXT_ApproveEmbeded = 'הרכיב אושר לפירסום';
+var TXT_RejectEmbeded = 'הרכיב נשלח לתיקון';
+var TXT_PublishBook = 'אנא המתן...גרסת הספר בעיבוד';
+var TXT_Status_All = 'בחר סטטוסים';
+var TXT_Status_N_of_M = 'N/M סטטוסים';
+var TXT_Status_None = 'אף סטטוס';
+var TXT_EmbededList_Page = 'עמוד';
+var TXT_EmbededList_Type = 'סוג';
+var TXT_EmbededList_Title = 'כותרת';
+var TXT_EmbededList_Updated = 'תאריך';
+var TXT_EmbededList_Status = 'סטטוס';
+var TXT_SelectionAreaNoText = 'לא נמצא טקסט באזור שסומן! ניתן להעתיק כתמונה.';
+var TXT_ServerError = 'שגיאה בשרת, נא נסה מאוחר יותר';
+var TXT_BookName = 'שם הספר';
+var TXT_Teacher = 'מורה';
+var TXT_LMS_Status = 'מצב ביצוע';
+var TXT_NumberOfStartedStudents = 'בעבודה';
+var TXT_NumberOfSubmittedStudents = 'ממתינים לבדיקה';
+var TXT_NumberOfMarkedStudents = 'קיבלו ציון';
+var TXT_LMS_Schedule = 'לוח זמנים';
+var TXT_LMS_Guidelines = 'הנחיות';
+var TXT_LMS_Tasksmanger = 'ניהול משימות';
+var TXT_LMS_Feedback = 'משוב המורה';
+var TXT_LMS_Mark = 'ציון';
+var TXT_Note_Title = 'כותרת פתקה';
+</script>
+
+  <script type='text/javascript'>
+function Layers_GetSiteExtensionLayers() {
+Layers_State[0] = {'Index':'0', 'ID':'3', 'Name':'מורה שלי', 'Visible': true, 'Gif': '/KotarApp/Viewer/Images/Layers3/Teacher.gif', 'Width': 19, 'Padding': 0 };
+Layers_State[1] = {'Index':'1', 'ID':'2', 'Name':'מערכת', 'Visible': true, 'Gif': '/KotarApp/Viewer/Images/Layers3/Admin.gif', 'Width': 28, 'Padding': 7 };
+Layers_State[2] = {'Index':'2', 'ID':'1', 'Name':'שלי', 'Visible': true, 'Gif': '/KotarApp/Viewer/Images/Layers3/MyNotes.gif', 'Width': 14, 'Padding': 5 };
+Layers_State[3] = {'Index':'3', 'ID':'58', 'Name':'שיתופי', 'Visible': true, 'Gif': '/KotarApp/Viewer/Images/Layers3/MyPubNotes.gif', 'Width': 36, 'Padding': 5 };
+Layers_TotalNumOfLayers = 4;
+return Layers_State;
+}
+</script>
+
+  
+  <input id="ios7focus" type="text" size="0"  style="position:fixed;top:0;width:0; height:0;opacity: 0;" />
+  <iframe id="iPrint" width="1px" height="1px" frameborder="0" scrolling="no" style="position: fixed;"></iframe>
+   
+      </div>
+      <div id="trFooterContainer" style="position: fixed; bottom: 0; left: 0; width: 100%; z-index: 25;">
+        
+          
+<link href="/CSS/FooterTouch.css" rel="stylesheet" />
+
+<div class="footerrow">
+  <div class="footerrights">© מטח - המרכז לטכנולוגיה חינוכית</div>
+  <div class="footerlinks">
+  <span class="footerlink"><a title="אינדקס הספרים" href="/KotarApp/Index/Alphabetical.aspx">אינדקס הספרים</a></span>
+  <span class="footerlink"><a title="לתקנון הספרייה" href="/Misc/TermsOfService.aspx">תקנון הספרייה</a></span>
+  <span class="footerlink"><a title="על הספרייה" href="/Misc/About.aspx">על הספרייה</a></span>
+  <span class="footerlink"><a title="תנאי פרטיות" href="https://storage.cet.ac.il/Support/privacyTerms.pdf">תנאי פרטיות</a></span>
+  <span class="footerlink"><a title="עזרה" href="/Misc/contactUs.aspx">עזרה</a></span>
+    </div>
+</div>
+
+        
+      </div>
+    </div>
+
+
+    
+<div id="dvModalDialogBackground" style="z-index:10000; display: none; top: 0; left: 0; right:0; bottom:0;
+  position: fixed;" class="modalDialog-standart">
+  <div id="dvModalDialogIFrameContainer" style="width: 100px; height: 100px; position: fixed; z-index: 2500;background-color:transparent">
+    <iframe id="modalDialogIFrame" width="100" height="100" frameborder="0" scrolling="no"
+      style="position: relative;background-color:transparent" allowtransparency="true"></iframe>
+    <iframe id="taskFormIframe" src="about::blank" style="display:none" width="100%" height="100%" frameborder="0" data-cd-id="0.00262229790310764" data-cd-reg="true" allowfullscreen="" webkitallowfullscreen="" msrequestfullscreen="" mozfullscreenenabled=""></iframe>
+  </div>
+</div>
+
+    
+
+<iframe id="modalTouchDialogIFrame" width="100" height="100" style="position: absolute;background-color:transparent;border:none;overflow:hidden; display:none; z-index:20000" ></iframe>
+    
+    
+    
+    <script type="text/javascript">
+      var cartlink = '/KotarApp/Shop/Cart.aspx';
+      var oPagesInfo = {"pages":[{'o':true, 'pid':94775008, 'gid':'SRRJ_JS_J_^TJV^_SSV', 'lbl':'C1', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775010, 'gid':'TRJTRUJSS_TJPTJVQ^R_U_', 'lbl':'C2', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775011, 'gid':'QP^P_R_J^PJSR_J_PTJ^^RQR', 'lbl':'1', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775016, 'gid':'RVRR_UJTWJSUPJ^_JVWURQP^T', 'lbl':'2', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775023, 'gid':'_PVR^R_QJWQQJSSJ_T_WJQ^_PWTQPT_', 'lbl':'3', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775037, 'gid':'_VP^WWJR_JSWJ_TJVTQSQ^^_', 'lbl':'4', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775052, 'gid':'SRTVSTPJWJSJRSJVSUPP^V', 'lbl':'5', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775067, 'gid':'_UVVJTT_RJSWQJ^JQVUST^US', 'lbl':'6', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775075, 'gid':'V^PP_J^JSVWQJ_QSJS_RUVR', 'lbl':'7', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775082, 'gid':'RJQQJSRRPJSPJPRUQUPWWUS', 'lbl':'8', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775083, 'gid':'QR_QJQWJSTSJ_PRJS^U_QQSS_S', 'lbl':'9', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775094, 'gid':'T^P_TJUTJSVJ^PJWQU^UQQV', 'lbl':'10', 'v': 18,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775106, 'gid':'QTQ^_JQSP^JSWV^J^WQJTR_PQTSQW^V', 'lbl':'11', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775112, 'gid':'W^_TJQU_JSSJQVJP^^_RU^', 'lbl':'12', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775123, 'gid':'^UV_PJ_TJSSP_JVP^J__WTT_PU', 'lbl':'13', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775135, 'gid':'_QSSTJQRRJSPVWJTRJTWWWUU^PVW', 'lbl':'14', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775146, 'gid':'S_URJQQTJSUT_JQTJ_SUSWWU_', 'lbl':'15', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775156, 'gid':'RSP^TJ^^JSTT^J_QJPRPS_UQ_', 'lbl':'16', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775167, 'gid':'SPUWUQJ^STJSJ_VRJ^RWTWWQTSS', 'lbl':'17', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775174, 'gid':'_U^T_JRSJSTJ_TJQSTW^TPP', 'lbl':'18', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775185, 'gid':'_SPSV^JQWSJSWJTVPJ^R^SRQQUV', 'lbl':'19', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775195, 'gid':'SQW_SJQRQJS_VJRJRURRPQTT_T', 'lbl':'20', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775203, 'gid':'^^RJPW_JSQWVJ_^UJ_TW_QRU', 'lbl':'21', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775211, 'gid':'PQVU^RUJSWSJST_J_PJUT_RUTR', 'lbl':'22', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775228, 'gid':'_RPJSUPJSTWJ^PURJ^WTT^URRS', 'lbl':'23', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775241, 'gid':'PW^TTJ^_JSWJ_PJ^TVP', 'lbl':'24', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775250, 'gid':'Q^T_SRPJUQJS_J_TJ^VTSQ_S^_', 'lbl':'25', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775260, 'gid':'Q_^QJ^_JST^JWTJRTUSWQ', 'lbl':'26', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775277, 'gid':'P^Q^TJ_PVJSTPJQJQVV^P^VP', 'lbl':'27', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775289, 'gid':'TQVJQQVJSSRJ^VUJQWTTW^S', 'lbl':'28', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775298, 'gid':'VWS_JWUTJSUQJT_JUU_PQ_R', 'lbl':'29', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775305, 'gid':'^_QJ__JSVP^J^UUJ_TRSPTUQ', 'lbl':'30', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775320, 'gid':'^VTR^UJRRJSTJ^WJQQVWVTV', 'lbl':'31', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775327, 'gid':'RQRS__JP__JS_TJRJTWSV_RT__', 'lbl':'32', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775335, 'gid':'W^RPJVJSU^JS^TJP_VPQQUU', 'lbl':'33', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775352, 'gid':'VWU^J_^JSUJSSRJVRSRUQ', 'lbl':'34', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775362, 'gid':'S_QRJUR^JSQPJ^^SJUVPQTVPUUT', 'lbl':'35', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775374, 'gid':'^WU^JWVUSJSUVJWJUPVQ_', 'lbl':'36', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775387, 'gid':'RTQUQ_JPJS^JSSUJ_PS_QS_', 'lbl':'37', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775401, 'gid':'Q_VW_JSW_JSUPJPRSJRP_^RQS_V', 'lbl':'38', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775413, 'gid':'TRSU^J^^JSV^J^^^UJTTWTS^', 'lbl':'39', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775429, 'gid':'WRRURJTV_JSSJWJURSQQQRW^U', 'lbl':'40', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775441, 'gid':'V_RVJWPVJSWVWJ^PRJTSQPUWS', 'lbl':'41', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775453, 'gid':'WTQQJTU^WJSPJ^SJQQRW_SQ', 'lbl':'42', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775466, 'gid':'T_^SWJSQQPJSQSJTJSVQ^UUP^', 'lbl':'43', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775475, 'gid':'T___J^QQJSSSWJ^_VJ_^RW', 'lbl':'44', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775481, 'gid':'^TWSSWJQTTJSWUJ_^JP^TSWTUW', 'lbl':'45', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775491, 'gid':'VT^WJST^JSR_UJ_JR^SPQPTT', 'lbl':'46', 'v': 13,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775503, 'gid':'VUWJ^PSJSUWJ^VJ^VVQRUW', 'lbl':'47', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775516, 'gid':'Q^W^TRJ^QV_JS_J_PWJ_VWQ^STVU', 'lbl':'48', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775523, 'gid':'VUVTTRJPPRJSQPJ_JV_PSTVWV', 'lbl':'49', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775536, 'gid':'S_RS_VJSVJSTQTJTJRRVQPPRSVW', 'lbl':'50', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775546, 'gid':'S^QJVRJSUJ_TURJQ^TQUUVWS', 'lbl':'51', 'v': 12,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775559, 'gid':'QSS_^J^RWJSQUVJ^JU^RPQQUWP', 'lbl':'52', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775569, 'gid':'^^SQWJ^W_JS^JRQSJ^UPSU_UR', 'lbl':'53', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775573, 'gid':'Q^RSVJRVJSWUJSU^JS^SVSUSS', 'lbl':'54', 'v': 12,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775584, 'gid':'RPWUWUJ^RRJS_VJ_VWVJSQU_W_', 'lbl':'55', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775597, 'gid':'V_RUQSSJWTUQJSVJ^RQRJQUSWT_', 'lbl':'56', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775604, 'gid':'WWWSSJ__JSRQJUSJVPQ^^PWWV', 'lbl':'57', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775615, 'gid':'Q_UP^JRQUSJS_UJ^RPVJQU^^P^Q', 'lbl':'58', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775623, 'gid':'QUTJU_SJS^^RJVJUTSUT_RQP', 'lbl':'59', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775635, 'gid':'VSWUWWJUJSRQVJRRJ__RSW_PVQ', 'lbl':'60', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775646, 'gid':'_SWP__SJRQJSRSJVUJQRSUP', 'lbl':'61', 'v': 12,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775656, 'gid':'T_WQVVSJTQVJSWVUJ_RVJ_PT_SUSP', 'lbl':'62', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775669, 'gid':'SQJ^TJSWP_J^VWJRSRRWVP^QP', 'lbl':'63', 'v': 12,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775678, 'gid':'QW^R^RSJR^PJS_SJRQJWPT^SR', 'lbl':'64', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775687, 'gid':'RUW^RWJ^PSJSQJRQQJRVRWUT', 'lbl':'65', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775696, 'gid':'QVP_^JWSRJS^JTQJ_WV_VR', 'lbl':'66', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775704, 'gid':'PJURJS^PJVSJPQRPRRRWV', 'lbl':'67', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775710, 'gid':'_PQSWUSJTUUJSRWJ_PTVJU^RW_V', 'lbl':'68', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775722, 'gid':'UURWJV_QWJSUJRSJSQ^^TQPPR', 'lbl':'69', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775735, 'gid':'QURT__JTT^JSTTJ_VUJQ^RQVUQP', 'lbl':'70', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775744, 'gid':'RPRJSSUJSSQWJ_R_WJRWUTW^QT', 'lbl':'71', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775754, 'gid':'PTTVSRUJVWRJS_QJPVJVPVP^R', 'lbl':'72', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775764, 'gid':'QUQJRJSSVJ_VJ^RPT_TRS', 'lbl':'73', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775774, 'gid':'W_SSJ_VP_JSQSJ__JRQT^V', 'lbl':'74', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775785, 'gid':'TPUPQJTJS^W^JPJSR^UVR', 'lbl':'75', 'v': 21,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775799, 'gid':'TR^STJQJS_RJ^__UJQ_VUPPUPW', 'lbl':'76', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775811, 'gid':'W^^RUUJRUJSUUPJ^_WJTUQ_PW^QR_', 'lbl':'77', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775822, 'gid':'UWU^JRVJSSTJRJPVTS^QPW^SQ', 'lbl':'78', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775832, 'gid':'VS^QTRUJQUTUJSTUJ^SJ_VPV_U_U', 'lbl':'79', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775840, 'gid':'QUTWUSJTSS_JSRVQJJPUPR^T', 'lbl':'80', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775848, 'gid':'QUW_SUJSVTTJS^VJWTJPRRPTRS', 'lbl':'81', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775859, 'gid':'^Q^TJQVJSVTQJ^PTJVQSQQ_VVUP', 'lbl':'82', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775870, 'gid':'RUS^PJUPSSJSWUJRRJVRPSSWPP', 'lbl':'83', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775884, 'gid':'UWUWWJTSJSSJWVJQVRUTVRWQ^', 'lbl':'84', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775895, 'gid':'PSVRQJVVJSVRJRPJU_RWS^', 'lbl':'85', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775910, 'gid':'SPQUWJTRPJSVUJ_JP^UQRU', 'lbl':'86', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775924, 'gid':'TSW_U_^JWRJSPJRJ_TST^WR_', 'lbl':'87', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775937, 'gid':'SRVRWVJWQPJSPURJ_^VJRSUVS^UW', 'lbl':'88', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775947, 'gid':'QTQ^J^__JSQ_RJ_TPJQ_^Q^UUR', 'lbl':'89', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775960, 'gid':'R_WVTVJQQVJST_WJTSJVQQT_P_', 'lbl':'90', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775973, 'gid':'WSV_UWJWJSJ_RJWW^R_WWSTT', 'lbl':'91', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775985, 'gid':'RVJWJSSUJ^^JRT_UU^', 'lbl':'92', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94775996, 'gid':'_T_WPWJPWWJSTTJT^SJRSP', 'lbl':'93', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776004, 'gid':'^PT^WUJ_UUQJSPQVJ_P_JQVRTVWT', 'lbl':'94', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776012, 'gid':'^W^RSJQ^VJSQQJ^QJS^TTVWT', 'lbl':'95', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776018, 'gid':'W_^PPJJSQ^PJ_RVJRWUVRWPRQS', 'lbl':'96', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776032, 'gid':'UWWVQWJQPJSWJPTJWVUWSU', 'lbl':'97', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776042, 'gid':'_Q^_SJQVJSQQJSJPSUQ_^Q', 'lbl':'98', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776053, 'gid':'^^T_J_WJSJT_JWQWPS_^', 'lbl':'99', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776071, 'gid':'PVVPJU_SJSW^J^RRQJUUPQV^RRWP', 'lbl':'100', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776083, 'gid':'UQWJWJSVWJ^PQ^JP^RRW', 'lbl':'101', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776094, 'gid':'QW__VPJPJS^J_SWJQ_S^^TV', 'lbl':'102', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776102, 'gid':'QWRURTJW^RJS_PJ^QWJWUWWT^WQ', 'lbl':'103', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776113, 'gid':'_^TT_JTUJSUJ^VJR^VR^TWQR', 'lbl':'104', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776124, 'gid':'^SUSPVVJTSJS^J_STUJ_RWWQRT^', 'lbl':'105', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776132, 'gid':'VRVTJQSJSQJRSJ^WSWUVU', 'lbl':'106', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776137, 'gid':'SQJ_^TJSTPJ_^JTUSQP', 'lbl':'107', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776150, 'gid':'^VV_UWQJUVPJSV_J_TTJ_VSRWSV', 'lbl':'108', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776159, 'gid':'PUWPJUVJS^J_SWJRUT^TR', 'lbl':'109', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776175, 'gid':'U__UR_J__SJSUJ^QJ_SQ^RUV', 'lbl':'110', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776186, 'gid':'TWPUJTJSJ__PJUTSQVW_UP', 'lbl':'111', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776199, 'gid':'TVPPTJUU^JSTQSJ_^JS^UUVTUS', 'lbl':'112', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776210, 'gid':'QW_^RJ_SVJST_J^_JW_^^SV', 'lbl':'113', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776226, 'gid':'PP_PJTVWJS^VJ^SWJSSU_TW', 'lbl':'114', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776235, 'gid':'SU_^PJQUQJSTQSJ^J^V_^WTWQQW', 'lbl':'115', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776246, 'gid':'VQW^WJPJS_QJQQJ_S_VTW_', 'lbl':'116', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776253, 'gid':'PTWSWSJTVJSPSJWSWJWTSVTR', 'lbl':'117', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776263, 'gid':'UVRWJQVSJSV_JJ_WQT^Q_S', 'lbl':'118', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776279, 'gid':'__UQSJSQ^JST^J^RRJ_PU', 'lbl':'119', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776292, 'gid':'QT_PVJ^QRJSQT^J^^JQ_RP_QQT', 'lbl':'120', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776303, 'gid':'^SSPJRW^^JSVQJVUJU_Q^TV', 'lbl':'121', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776313, 'gid':'PVQJSRVVJSVPJ_TWJ_T^SU^^V', 'lbl':'122', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776320, 'gid':'_SRWTQJVRRVJSQTJP_JQ_WPS', 'lbl':'123', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776333, 'gid':'RRQ^_^VJ_W^JSWQJ^TJSPUWP', 'lbl':'124', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776345, 'gid':'WPWTVJRRQJSQT_J^VQ_JRSUT^P^', 'lbl':'125', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776355, 'gid':'PW_R^JJSPJSUJQW^R^VSW', 'lbl':'126', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776368, 'gid':'VQQTJ^USJSJ_SRQJUP_USRQ', 'lbl':'127', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776376, 'gid':'WPPT^J_SJS_WJ_WJVVT_VVPQS', 'lbl':'128', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776390, 'gid':'T_UVJWSPJSQWJ^JUQ^^_TPU', 'lbl':'129', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776401, 'gid':'Q__TJR^JSPJ_SQUJVQR__^UTT', 'lbl':'130', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776410, 'gid':'SQW__JQVQJSVPWJ_QUPJTQVUVRW', 'lbl':'131', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776419, 'gid':'WRTTJWJS^TVJTRJPS^TTQS_', 'lbl':'132', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776432, 'gid':'_VWTRJPVUJSPV_JVR^JRQUSTS^', 'lbl':'133', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776445, 'gid':'U_SVUSJWJSTSRJJ^VQRVTQU', 'lbl':'134', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776458, 'gid':'PUSTS_JVWQJSTUJ__J^VTTUQW^_', 'lbl':'135', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776470, 'gid':'T^TVQJWTJS_JW_QJQ_VR^SRTS', 'lbl':'136', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776482, 'gid':'WQWWWPJT^TJSVTJ__RJTSTWU_S^', 'lbl':'137', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776495, 'gid':'QR_SQU_QJQ^JS^URJPJ_SS^^WWR^', 'lbl':'138', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776504, 'gid':'R__WUQJ^VVJSJWQRJ_VVWQP^S_U', 'lbl':'139', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776516, 'gid':'P^_RPJ^U^JS^J_^JPWWWW^', 'lbl':'140', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776522, 'gid':'_WR^RJSTJS^RRJJQ_VTVP^WVS', 'lbl':'141', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776526, 'gid':'RPURSJSP_JSPJ^RVJURRQVUP', 'lbl':'142', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776540, 'gid':'_RUJ_PTJST_^JWRVJQP_VU_', 'lbl':'143', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776550, 'gid':'WQV_RRJQJS^J^RVJ_^SW^RQSW', 'lbl':'144', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776560, 'gid':'PWWJVTQJSUJ^VQJVWS_', 'lbl':'145', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776570, 'gid':'QUJSJS_PJUJSWQ^VS_', 'lbl':'146', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776582, 'gid':'____T_RJT_SJS^QJWSJV_T_RTUV', 'lbl':'147', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776594, 'gid':'UWQUWJQWJSSJ^JQQVU_PPPQ', 'lbl':'148', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776602, 'gid':'TVTP^WJSVJSV^_J_VJTUT^PPP', 'lbl':'149', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776614, 'gid':'S_WVV^J^^WJSPVJWQJSVWTWWVQV', 'lbl':'150', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776631, 'gid':'TTWJQ^RJSVRWJVRJR_W_SS^R', 'lbl':'151', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776640, 'gid':'Q_^QJWTWJSTTJ_TWJSS^R^USV', 'lbl':'152', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776646, 'gid':'V^PRWPJ_SJSPTJ_R_PJ_^VQQS_', 'lbl':'153', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776663, 'gid':'U_P^Q_JTJSVJ^RSJU_TUSPW', 'lbl':'154', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776672, 'gid':'USUSW^PJVJSSSUJ__SRJ^^PVWSP', 'lbl':'155', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776682, 'gid':'PS__JTS_JSTJU_JW_SU^UTQ_', 'lbl':'156', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776692, 'gid':'__WPTSUJSRJSVUWJQTJWTR__UPWWV', 'lbl':'157', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776705, 'gid':'_^PSQTPJTR_JSTQJ_SQJRPWTQTUR', 'lbl':'158', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776716, 'gid':'URPJ^JSJ_UTJ_V_^QQ_^', 'lbl':'159', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776730, 'gid':'VTRR_JVJSJ_VTJQPR^UQQ', 'lbl':'160', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776738, 'gid':'RSW_SUSJQ^PVJSVJ_SVJRTSW', 'lbl':'161', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776746, 'gid':'_QTVVJRSTJSRQJ^UVUJU_^_VQPVP', 'lbl':'162', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776756, 'gid':'TP_JTPJSR^PJ^VWJSPVSWQSQ', 'lbl':'163', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776763, 'gid':'Q^P_TJ_UTJS_RJ^^TJQUWVS_T', 'lbl':'164', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776772, 'gid':'UPR^W^JTSSJSRJUQJVUWTV__SW', 'lbl':'165', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776783, 'gid':'PT_SJV^RJSPVWJ^UJ^PUV_VPP__W', 'lbl':'166', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776798, 'gid':'PUP^RJRTUJSWJRJVTUPWSV', 'lbl':'167', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776806, 'gid':'USJTRRJS_UJ^^JRTT', 'lbl':'168', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776813, 'gid':'T^PWRRJUJS__UJ_^^JRRTWT^RRU', 'lbl':'169', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776823, 'gid':'RTTQ^_J^SRUJS_J_TTJWVRTQSUQ_P', 'lbl':'170', 'v': 19,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776836, 'gid':'T^_^WJVVJS^^JQ^JURRUWTS', 'lbl':'171', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776849, 'gid':'V_QTJWT^JSPVJ^SWUJWPPWVPSW', 'lbl':'172', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776860, 'gid':'UQSUS^JSWRJSPTTJ_WRJWTQUQP', 'lbl':'173', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776875, 'gid':'UPRTWJU^_SJSVRJ_WPJQS^UVU^^SP', 'lbl':'174', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776884, 'gid':'^W^JWJSS^JQQJTR_Q_TUR', 'lbl':'175', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776892, 'gid':'^UV__VJRQJS^RJ_SJSUVU', 'lbl':'176', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776898, 'gid':'PSPJQWRJSQTJ_SSJRTVUT', 'lbl':'177', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776913, 'gid':'PSRVJTPJSUPJ^_RJ_WSQ_', 'lbl':'178', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776930, 'gid':'SRVS_RVJVWJSPVJ^JVSVP^WRRVU', 'lbl':'179', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776943, 'gid':'RRSJR^^JSVJ^SJT_QTWWRS', 'lbl':'180', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776957, 'gid':'TJTVWJSTTJ^JVTWSUS', 'lbl':'181', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776972, 'gid':'VTWPQJUJSRVJVUJ_RPPWSQW^', 'lbl':'182', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776983, 'gid':'QQTQWUJQVVVJS_RJ^VR^JPW_W_S_P', 'lbl':'183', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94776996, 'gid':'SVVWQRJQSQJSVJVJ_Q_SP', 'lbl':'184', 'v': 21,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777009, 'gid':'SSUSWW^JPVJSVJ_QQVJRTQ_SUQRV', 'lbl':'185', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777020, 'gid':'R^USWPJPWJSRJVTSJWPQR^P__', 'lbl':'186', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777030, 'gid':'UQST^JVJS_^J^UQRJUVPVUQPW', 'lbl':'187', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777044, 'gid':'R_^JUJSRSTJ_TWJ_RRWVWS', 'lbl':'188', 'v': 15,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777061, 'gid':'SV_PTSJ^UJSJURJWPVVTQRPT', 'lbl':'189', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777068, 'gid':'RPPWUJVVJSWVQJ^QJVVP_PRU', 'lbl':'190', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777078, 'gid':'URSUQWPJQWUJSUJ^VQJW^UQQWVRP', 'lbl':'191', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777092, 'gid':'RRPTU_JSQQUJS^^RJSQJVV_^VSR', 'lbl':'192', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777103, 'gid':'PVQPJSWUVJSUWJ_PQSJS^QWVRQ', 'lbl':'193', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777113, 'gid':'QSQPTJ_TJSPSSJ_SPJPPV__SW^^Q', 'lbl':'194', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777126, 'gid':'SSSSP^J^QTJS_QJURJURVTVTWT', 'lbl':'195', 'v': 17,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777137, 'gid':'VPQPTWJJSS__J^_QUJWSTSTQ', 'lbl':'196', 'v': 17,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777151, 'gid':'TPWJTRJSQJ^T^JVPW_SU^', 'lbl':'197', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777161, 'gid':'^RWJPPJS^SJV_TJVPQWSSP', 'lbl':'198', 'v': 17,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777171, 'gid':'_URSUQJUSPJSRPJ^_SJUR^VSQ', 'lbl':'199', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777185, 'gid':'W^VQTTJTWSJSR_J^W^JSWWPWSWRW', 'lbl':'200', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777197, 'gid':'UQ_^UTJRVWJSUJ^QPUJ_QUURWQQ_V', 'lbl':'201', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777209, 'gid':'_RVT_JTT_JSQSJ^R^TJVUV_TRWQ_', 'lbl':'202', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777222, 'gid':'^QU^UJ^^JSS_JQ_JPVPU^T^_', 'lbl':'203', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777232, 'gid':'PQUVSVJTQJS^^J^^QJUQVRTUP_', 'lbl':'204', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777237, 'gid':'UWVVJJSTT^J^VTJWPQT_T^', 'lbl':'205', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777241, 'gid':'QQWJQJSU_WJ_JW_TSTWT_', 'lbl':'206', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777253, 'gid':'RWWRJWVJS_J__PUJUQVTVW', 'lbl':'207', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777263, 'gid':'PPTWSUJWJSRJ_V^JURVPTWS', 'lbl':'208', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777273, 'gid':'T_VRVJW_RQJS^^J_PTQJWPRVQ', 'lbl':'209', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777284, 'gid':'_TWTJPRWJS_VJ^JQTVRRWS', 'lbl':'210', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777291, 'gid':'RQ_WTJTRQVJSTTJJQ_^VSR', 'lbl':'211', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777297, 'gid':'T^PW^J_UJST^J^PUJRT^U^RVWTU', 'lbl':'212', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777310, 'gid':'WPVWSVQJQPJSVQJUJRT^QRS_', 'lbl':'213', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777316, 'gid':'^WW__JVRTJSPJW__JPUWVQUP^', 'lbl':'214', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777328, 'gid':'PRTSJPVUVJSPJ__PJTRW^PSR', 'lbl':'215', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777335, 'gid':'Q^RQQJ^UJSPJ^TJQUV_VV', 'lbl':'216', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777345, 'gid':'^^RQPQJWSUJSVJTJPSST', 'lbl':'217', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777351, 'gid':'SPQRVSQJSWJSPTWJJSPRQ^_TRQ_', 'lbl':'218', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777358, 'gid':'PUUJTURQJSUJVVJQS^S__R^', 'lbl':'219', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777372, 'gid':'S_SQTJVSJSUJ^^JVUWT_^', 'lbl':'220', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777385, 'gid':'TRS^VJRQJS_^^J^T_JPVSSRS', 'lbl':'221', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777394, 'gid':'UJT_QTJSQQJ^UQJVUSP_', 'lbl':'222', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777412, 'gid':'WWRSVJRRP_JS_RVJ_PV_JVUW_PSR', 'lbl':'223', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777424, 'gid':'PQTP^^PJRWVJSURWJ_TJ^^VR_RQQ', 'lbl':'224', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777433, 'gid':'^_RJWT^SJSPUTJ_USSJ^_UTV^PS_W', 'lbl':'225', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777445, 'gid':'_U_^JVSSVJS^JVJS^UWSWWSP', 'lbl':'226', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777455, 'gid':'RUVSJV^_JS^PJPWSJRTWQ_STT', 'lbl':'227', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777464, 'gid':'SS_PWWPJJS_QJR^JT^VTSWQ^', 'lbl':'228', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777475, 'gid':'R^PQTJQWVSJSWJ^JT^WQ^QPQP_P', 'lbl':'229', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777490, 'gid':'_VW_U_VTJUSJSRRUJQRUJSVPWVVUUU_R', 'lbl':'230', 'v': 21,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777501, 'gid':'W_^T^^J^VJS_J_PVJUUP_RS', 'lbl':'231', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777513, 'gid':'_TJV_JSQVRJ^JRWTTTQU', 'lbl':'232', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777521, 'gid':'TQSWQJT_VJST_JT_TJQ_TTT^RWU', 'lbl':'233', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777530, 'gid':'Q_^J_JSUJ_RWJV^SR', 'lbl':'234', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777538, 'gid':'SUPRSQVWJPJS^J^_QJ_UQPTRTT_', 'lbl':'235', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777547, 'gid':'WT^SPSJTWJSSQJU_J_S^STUU', 'lbl':'236', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777554, 'gid':'WSUJVJSTWJ__PJWSRUQU', 'lbl':'237', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777562, 'gid':'VSPVJ_QSJSRQJ_TTJQTTQ^W_', 'lbl':'238', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777574, 'gid':'^VWWR^TJ^PQJSVSRJ^PJ_TQQSW^', 'lbl':'239', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777585, 'gid':'TQRPVSJTQJSVJ^PTJSUPTPQQT_^', 'lbl':'240', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777595, 'gid':'QUJ_^U_JSVUJ^JQSVQQV', 'lbl':'241', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777605, 'gid':'SUWRTSJVVJSPUJPWPJTVQQTRSU', 'lbl':'242', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777615, 'gid':'US^WSSJS^RJSVJ_PSTJP^V_TQPR', 'lbl':'243', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777627, 'gid':'TSUPSTSJSTPJSVJT^JW^UQVV^', 'lbl':'244', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777637, 'gid':'VRVVJPJSQTQJ^S^JUP^PRWPRV', 'lbl':'245', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777645, 'gid':'T__TQ_JWRQWJSPJTJVPT^U_U', 'lbl':'246', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777654, 'gid':'STT^SRJPPJSUTJ^VJVVURR', 'lbl':'247', 'v': 20,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777667, 'gid':'^WQQJVPJSPUJWJSQ_RPRW', 'lbl':'248', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777677, 'gid':'QTPTJ_QJSQWJ^RJWRR^Q^RP', 'lbl':'249', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777687, 'gid':'V_RS__UJ_RJSRSJ_QQJWRSVTPU^', 'lbl':'250', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777698, 'gid':'P__QWRJTRJS^UJ__J^QWR__', 'lbl':'251', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777713, 'gid':'^P_PPTJ^_QJSPSJ_SJTRUVWPTQTS', 'lbl':'252', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777723, 'gid':'R_^PPJVUVJSSTJ^UVJQQSTW', 'lbl':'253', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777732, 'gid':'SWU^R_QJPS_JSQ^JSTJRQTS^QUP^V', 'lbl':'254', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777741, 'gid':'^^WPWJV^WJSWJV_RJPVSVS^U^', 'lbl':'255', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777751, 'gid':'SQUQV_JW_JSTJ_PVJSUQPUTWPQ', 'lbl':'256', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777755, 'gid':'S^RWJTSJSWRTJ_^JVPWPRVSW', 'lbl':'257', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777761, 'gid':'PU_QJJSV^^J^JW__TWPV', 'lbl':'258', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777766, 'gid':'PU^SU^PJ_TSJS_J^JRRWRQRUV', 'lbl':'259', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777770, 'gid':'VTQWWJRRJSTJRVJTSTPR', 'lbl':'260', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777794, 'gid':'S_QPVUJVTPJSVTJ_RS_JWPSW_PPW', 'lbl':'261', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777822, 'gid':'VUTUUJPPSQJSQ^J^_RJQRRPQQ', 'lbl':'262', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777849, 'gid':'UT_VPTJSJSVTUJWJ^UQW^', 'lbl':'263', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777876, 'gid':'VVSPJWW^JSRJ^QWPJ^V^V^UTU', 'lbl':'264', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777901, 'gid':'____UJTSUJSP^SJ_S_QJUQSQTV_R', 'lbl':'265', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777913, 'gid':'STWVJWPQ_JS_VJ_VWJR^WSVVUP', 'lbl':'266', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777923, 'gid':'Q_WUQQ_JRUJSVJ^S^JUSTR^T^', 'lbl':'267', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777932, 'gid':'PWRR__JPRJSUJ_WJVRR_PR_W', 'lbl':'268', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777941, 'gid':'UUTP^JUTJSUJ_WQJTW_QV_U_', 'lbl':'269', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777951, 'gid':'VUUUJUVJSURJ^PPJR^TWUTUTV', 'lbl':'270', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777955, 'gid':'U^PUP^J^RURJSVJRTPJUUTQU^Q', 'lbl':'C3', 'v': 10,'hi': 1276,'w': 991,'b': false},{'o':true, 'pid':94777956, 'gid':'_P^_TJVTSJS_WJ_T_JS_^TP_UVR', 'lbl':'C4', 'v': 10,'hi': 1276,'w': 991,'b': false}]}
+    </script>
+    <script src="Shop/JS/Cart.js"></script>
+  
+    
+    <script>
+      $(document).ready( function () { document.getElementsByTagName("body")[0].style.overflow = (isIE && ieVer <= 9) ? "hidden" : "auto"; });
+    </script>
+  
+<script type='text/javascript'> $(document).ready( function () {  BV_Init(94775007,'מסע אל העבר : העולם המודרני במשבר 1870 - 1939',274,false,0,0,991,1276, 0.833333333333333, "default", 4,"","/KotarApp/",false, false,false,true,false, "kotarimagesSTG.cet.ac.il",4,true,true,true,true,"rtl",true, "history",true, true, "52f90c98-2f29-47f7-b547-70ba4492d9d2","zc10bkmuiinnzuxfv5y4rh0m","00000000-0000-0000-0000-000000000000",0, "he","Kotar.School","Talkbacks",0, "", false, false, false, '', "" ,"");  }); pageImageLoader();var Master_TalkbackApiDomain = 'http://talkbackservice.cet.ac.il';</script><script type='text/javascript'>
+ var BaseMaster_bUserIsLoggedIn = false;
+ var BaseMaster_gUserID = '00000000-0000-0000-0000-000000000000';
+ var BaseMaster_bIsClientInIpSubscriptionRange = false;
+ var BaseMaster_sUserFullName = decodeKotar('אורח');
+ var BaseMaster_bIsInDevMode = false;
+ var Master_MybagLink = '';
+ var BaseMaster_Environment = 'cet.ac.il';
+ var Master_OpenLmsTasks = '';;
+
+ MasterPage_OnLoad();</script></form>
+  <div id="lmswrraper" style="position: fixed; width: 100%; top: 0; z-index: 10000;"></div>
+  <script type="text/javascript"> //@@@BUG preventa pasting from clipboard to inputs
+    var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;	
+    if(IsInViewer() && (isIE || isIE11 || isFirefox))
+    {
+      var body = document.getElementsByTagName("BODY")[0];
+      body.oncontextmenu = function (){return false;}
+    }
+  </script>
+ 
+<script id="CetClientResourceScript" src="/ClientResourcesServingHandler.ashx?h=a861587e4201ddd3c6dbef65239b30a6ad503aa1&t=javascript&minify=True" type="text/javascript"></script><script id="CetClientResourceScript" src="//cdn.cet.ac.il/libs/cet.content/latest/display.min.js" type="text/javascript"></script><script id="CetClientResourceScript" src="//cdn.cet.ac.il/libs/cet.browsercheck/latest/check.min.js" type="text/javascript"></script></body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style/bootstarp.css">
+
+
+        <link rel="stylesheet" href="style/style.css">
+        <title>Contact Me</title>
+</head>
+
+<body dir="rtl">
+        <div id="circle" class="emptyCircle" onclick="cirClick()">
+                <div class="line" id="topLine"></div>
+                <div class="line" id="middleLine"></div>
+                <div class="line" id="lowLine"></div>
+        </div>
+
+        <nav id="nav">
+
+        </nav>
+        <h1>שמור על קשר</h1>
+        <h4 id="formHeadLine">מלא את הפרטים, ואחזור אליך בהקדם האפשרי</h4>
+        <div class="rowInput">
+                <div id="errorPlace"></div>
+
+        </div>
+
+        <form>
+                <div class="container">
+                        <div class="rowInput">
+
+                                <label class="label">שם פרטי*</label>
+                                <input type="text" id="uName">
+                        </div>
+
+                        <div class="rowInput">
+                                <label class="label" for="">שם משפחה*</label>
+                                <input type="text" id="uLast">
+                        </div>
+                        <div class="rowInput">
+                                <label class="label" for="">מייל*</label>
+                                <input type="email" id="uEmail">
+                        </div>
+                        <div class="rowInput">
+                                <label class="label" for="" id="msgLabel">הודעה</label>
+                                <textarea name="msg" id="uMsg"></textarea>
+
+                        </div>
+
+                </div>
+        </form>
+
+
+
+        <div class="rowInput">
+                <button id="sub" class="btn btn-outline-dark">שלח!</button>
+        </div>
+
+        <script src="script/query.js"></script>
+        <script src="script/main.js"></script>
+
+</body>
+
+</html>

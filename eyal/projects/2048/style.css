@@ -1,0 +1,108 @@
+.btnTwo {
+    width: 100px;
+    height: 100px;
+    font-size: 45px;
+    content: "2";
+    background-color: #eee4da;
+    color: black;
+    text-align: center;
+    align-content: center;
+}
+
+.btnFour {
+    width: 100px;
+    height: 100px;
+    font-size: 45px;
+    background-color: #ede0c8;
+    text-align: center;
+}
+
+.btnEight {
+    width: 100px;
+    height: 100px;
+    font-size: 45px;
+    background-color: #f2b179;
+}
+
+.btnSix {
+    width: 100px;
+    height: 100px;
+    font-size: 45px;
+    background-color: #f59563;
+}
+
+.btnHun {
+    width: 100px;
+    height: 100px;
+    font-size: 45px;
+    background-color: #edcf72;
+}
+
+.btnTwoHun {
+    width: 100px;
+    height: 100px;
+    font-size: 45px;
+    background-color: #edcc61;
+}
+
+.btnFiveHun {
+    width: 100px;
+    height: 100px;
+    font-size: 45px;
+    background-color: #edc850;
+}
+
+.btnK {
+    width: 100px;
+    height: 100px;
+    font-size: 45px;
+    background-color: #edc53f;
+}
+
+.btnTwoK {
+    width: 100px;
+    height: 100px;
+    font-size: 45px;
+    background-color: #edc22e;
+}
+
+.btnThirty {
+    width: 100px;
+    height: 100px;
+    font-size: 45px;
+    background-color: #f59563;
+}
+
+.btnSixty {
+    width: 100px;
+    height: 100px;
+    font-size: 45px;
+    background-color: #f65e3b;
+}
+
+.btnDef {
+    width: 100px;
+    height: 100px;
+    color: "red";
+    content: "2";
+    text-align: center;
+    font-size: 45px;
+    background-color: #ccc0b3;
+}
+
+#table {
+    background-color: #bbada0;
+    width: 420px;
+    height: 420px;
+    margin: 0 auto
+}
+
+.Squere {
+    /* fill:rgb(202,202,202); */
+    /* stroke-width:1; */
+    /* stroke:rgb(0,0,0); */
+    width: 100px;
+    height: 100px;
+    background-color: rgb(202, 202, 202);
+    /* padding-left:50px; */
+}
