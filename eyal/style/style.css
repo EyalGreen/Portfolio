@@ -21,9 +21,11 @@ nav {
     background-color: #1d1e2200;
     transition: 1s;
 }
-#projName{
+
+#projName {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
+
 .imgMe {
     min-width: 400px;
     min-height: 500px;
@@ -71,10 +73,12 @@ label {
     /* display: block !important; */
     transition: 0.3s;
 }
-.linePrj{
+
+.linePrj {
     /* opacity: 0;
     transition: 0.4s; */
 }
+
 #lineBox1 {
     height: 700px;
     border-left: 1.5px solid white;
@@ -102,8 +106,6 @@ label {
     /* background-color: blue; */
 }
 
-
-
 #lineBox4 {
     height: 700px;
     border-left: 1.5px solid white;
@@ -112,6 +114,7 @@ label {
     z-index: 0;
     /* background-color: blue; */
 }
+
 #lineBox5 {
     height: 700px;
     border-left: 1.5px solid white;
@@ -120,6 +123,7 @@ label {
     z-index: 0;
     /* background-color: blue; */
 }
+
 #lineBox6 {
     height: 700px;
     border-left: 1.5px solid white;
@@ -151,7 +155,7 @@ label {
 
 #chessBox {
     background-color: rgb(207, 206, 206);
-    background-image: url('/images/chess2.png');
+    background-image: url('../images/chess2.png');
     background-repeat: no-repeat;
     background-position: 50%;
 }
@@ -162,35 +166,39 @@ label {
 
 #damkBox {
     background-color: #284F5C;
-    background-image: url('/images/checkers.png') !important;
+    background-image: url('../images/checkers.png') !important;
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: 75%;
 }
 
 #box2048 {
-    background-image: url('/images/2048.png');
+    background-image: url('../images/2048.png');
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: 102%;
 }
+
 #boxequ {
-    background-image: url('/images/equ.JPG');
+    background-image: url('../images/equ.JPG');
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: 102%;
     text-align: center;
 }
+
 #boxconnect4 {
-    background-image: url('/images/connectFour.jpg');
+    background-image: url('../images/connectFour.jpg');
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: cover;
 }
+
 /* #boxconnect4:hover > #lineBox5{
     opacity: 1;
     transition: 0.4s;
 } */
+
 #boxXO {
     background-image: url('/images/Xo.JPG');
     background-repeat: no-repeat;
@@ -198,6 +206,7 @@ label {
     background-size: 100%;
     margin: 0 auto;
 }
+
 .box:hover {
     background-image: none !important;
     border: none;
@@ -211,25 +220,30 @@ label {
     border: none;
     transition: 0.3s;
 }
+
 #boxconnect4:hover {
     background-color: rgb(44, 44, 44);
     background-image: none !important;
     border: none;
     transition: 0.3s;
 }
+
 #chessBox:hover {
     background-color: rgb(44, 44, 44);
 }
-#textBox4{
+
+#textBox4 {
     position: absolute;
     left: 50px;
     top: 125px;
 }
-#textBox5{
+
+#textBox5 {
     position: absolute;
     left: 100px;
     top: 200px;
 }
+
 .navText {
     font-size: 19px;
     line-height: 55px;
@@ -253,20 +267,18 @@ textarea, #select {
     width: 345px;
 }
 
-form{
+form {
     position: relative;
     left: 150px;
     display: block;
-    
 }
-#errorPlace{
+
+#errorPlace {
     position: relative;
     left: 150px;
     /* display: block !important; */
-
     width: 700px;
     min-height: 60px;
-    
     /* transition: 0.4s; */
 }
 
@@ -277,17 +289,17 @@ form{
     font-size: 30px;
     width: 400px;
     height: 100px;
-    
-    
 }
-input{
+
+input {
     width: 700px;
     height: 50px;
     position: absolute;
     top: 50px;
     right: 10px
 }
-textarea{
+
+textarea {
     width: 700px;
     height: 100px;
     position: absolute;
@@ -295,20 +307,24 @@ textarea{
     right: 10px;
     margin-bottom: 20px
 }
-.label{
+
+.label {
     display: block;
     position: absolute;
     right: 10px;
     height: 30px;
 }
+
 .navTextWhite {
     color: #f0f0f0 !important;
 }
-.rowInput > #sub {
+
+.rowInput>#sub {
     position: relative;
     top: 55px;
     left: 150px
 }
+
 .navText:hover {
     padding-bottom: 2px;
     border-bottom: 3px solid #1d1e22;

@@ -2,7 +2,7 @@ var navSee = false;
 var nav = document.getElementById("nav");
 var circle = document.getElementById("circle");
 var circleClick = false;
-$("#nav").load("header.html");
+// $("#nav").load("header.html");
 
 window.onload = function () {
     resetScreen()
