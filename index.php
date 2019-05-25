@@ -1,1 +1,1 @@
-<?php include_once("eyal\index.html") ?>
+<?php include("/eyal/index.html") ?>
